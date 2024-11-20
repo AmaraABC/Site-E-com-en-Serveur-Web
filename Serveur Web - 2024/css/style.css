@@ -101,8 +101,28 @@ main {
             p {
                 font-size: 12px;
                 width: 60%;
-                text-align: start;
+                text-align: center;
             }
+        }
+    }
+}
+
+.details-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+
+    .details-img {
+
+    }
+
+    .details-text {
+        width: 60%;
+
+        p {
+            font-size: 17px;
         }
     }
 }
