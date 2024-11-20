@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica;
+    color: white;
+}
+
+body {
+    background-color: rgb(54, 54, 168);
+}
+
+.website-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 1.4rem;
+
+    .header-logo {
+        font-size: 3rem;
+    }
+
+    nav {
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.3em;
+    }
+}
+
+main {
+    background-color: rgb(77, 77, 197);
+    margin: 2rem 0 0 0;
+    padding: 2em 0;
+}
+
+.main-intro {
+    width: 90%;
+    margin: 1rem auto;
+    
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+.delimiter {
+    width: 95%;
+    margin: 3em auto;
+    height: 2px;
+    background-color: whitesmoke;
+    border: none;
+}
+
+.section-description {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .article-text {
+        width: 45%;
+    }
+
+    .article-text:nth-child(2) {
+        text-align: end;
+    }
+}
+
+.website-footer {
+    text-align: center;
+    background-color: rgb(54, 54, 168);
+    padding: 2rem 0;
+}
+
+.catalogue-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .catalogue-section {
+        /*display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;*/
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        
+        .catalogue-article {
+            display: grid;
+            grid-template-rows: subgrid;
+            grid-row: span 3;
+            align-items: start;
+            justify-items: center;
+
+            p {
+                font-size: 12px;
+                width: 60%;
+                text-align: start;
+            }
+        }
+    }
+}
