@@ -21,8 +21,24 @@
         </nav>
     </header>
 
-    <main>
-        <h1 class="register-title">Connexion</h1>
+    <main class="registration-main">
+        <article class="register-title">
+            <h1>Connexion</h1>
+        </article>
+        <article class="registration-article">
+            <form action="" class="registration-form" method="post">
+                <label for="emails" hidden>Adresse e-mail :</label>
+                <input type="email" name="emails" id="emails" maxlength="80" placeholder="E-mail.." required>
+                <br>
+                <label for="secret-password" hidden>Mot de passe :</label>
+                <input type="password" name="secret-password" id="secret-password" placeholder="Mot de passe.."
+                    maxlength="100" required>
+                <br>
+                <div>
+                    <button type="submit">Se connecter</button>
+                </div>
+            </form>
+        </article>
     </main>
 
     <footer class="website-footer">

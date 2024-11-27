@@ -127,4 +127,39 @@ main {
 .register-title {
     text-align: center;
     font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.registration-article {
+    display: flex;
+    justify-content: center;
+
+    .registration-form {
+        input {
+            margin-bottom: .5em;
+            height: 25px;
+            width: 30vw;
+            padding-left: .4em;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .7em;
+
+            button {
+                width: 40%;
+                height: 30px;
+                color: rgb(77, 77, 197);
+                background-color: white;
+                border: none;
+            }
+        }
+    }
+}
+
+.unknown {
+    margin: .5em 0 0 1rem;
+    font-size: 50px;
 }
